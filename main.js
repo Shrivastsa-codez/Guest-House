@@ -1,11 +1,20 @@
 name_of_array=[];
 function Submit() {
     var GuestName = document.getElementById("name1").value;
-    name_of_array.push("name_1");
-    console.log(name_of_array);
-    document.getElementById("View Guests").innerHTML=name_of_array;
+    names_of_people.push("name_1");
+
+    console.log(GuestName);
+
+    console.log(names_of_people);
+    var length_of_name = names_of_people.length;
+ console.log(length_of_name);
+ document.getElementById("display_name").innerHTML=names_of_people.toString();
+ 
 }
 
 function Show() {
-    document.getElementById("submit_button").style.display="block";
+var i=names_of_people.join("<br>");
+console.log(names_of_people);
+document.getElementById("p1").innerHTML=i.toString();
+document.getElementById("submit_button").style.display="block";
 }
