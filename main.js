@@ -1,7 +1,7 @@
-name_of_array=[];
+var names_of_people=[];
 function Submit() {
     var GuestName = document.getElementById("name1").value;
-    names_of_people.push("name_1");
+    names_of_people.push(GuestName);
 
     console.log(GuestName);
 
